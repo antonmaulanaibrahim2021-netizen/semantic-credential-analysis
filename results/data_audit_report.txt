@@ -1,0 +1,280 @@
+======================================================================
+Q1 SEMANTIC CREDENTIAL RESEARCH - DATA AUDIT REPORT
+======================================================================
+
+======================================================================
+1. DATASET INFORMATION
+======================================================================
+
+Dataset file : cross_institutional_dataset (1).xlsx
+Rows         : 1724
+Columns      : 11
+Memory usage : 948.40 KB
+
+======================================================================
+2. COLUMNS AND DATA TYPES
+======================================================================
+
+              column   dtype  unique_values
+       credential_id  object           1724
+         institution  object              2
+             program  object             14
+     education_level  object              4
+accreditation_status  object              3
+                 gpa float64            391
+graduation_predicate  object              4
+     graduation_date  object              3
+faculty_program_name  object             14
+               label   int64              2
+   manipulation_type  object              4
+
+======================================================================
+3. MISSING VALUES
+======================================================================
+
+              column  missing_count  missing_percentage
+       credential_id              0              0.0000
+         institution              0              0.0000
+             program              0              0.0000
+     education_level              0              0.0000
+accreditation_status              0              0.0000
+                 gpa            232             13.4571
+graduation_predicate            232             13.4571
+     graduation_date            232             13.4571
+faculty_program_name            232             13.4571
+               label              0              0.0000
+   manipulation_type              0              0.0000
+
+======================================================================
+4. DUPLICATE ANALYSIS
+======================================================================
+
+                                    duplicate_type  count
+   Exact duplicate rows excluding first occurrence      0
+                Rows belonging to duplicate groups      0
+Duplicate rows based on predictors excluding label      0
+
+======================================================================
+5. TARGET LABEL DISTRIBUTION
+======================================================================
+
+label  count  percentage
+    1    862        50.0
+    0    862        50.0
+
+======================================================================
+6. CATEGORICAL VARIABLE SUMMARY
+======================================================================
+
+
+institution
+-----------
+value  count  percentage
+  UHN   1492       86.54
+ PMKM    232       13.46
+
+program
+-------
+                   value  count  percentage
+                 Farmasi    287       16.65
+         Teknik Komputer    264       15.31
+               Akuntansi    237       13.75
+        Analis Kesehatan    227       13.17
+      Teknik Informatika    203       11.77
+   Manajemen Informatika    138        8.00
+Desain Komunikasi Visual     89        5.16
+            Teknik Mesin     80        4.64
+             Keperawatan     79        4.58
+      Teknik Elektronika     38        2.20
+               Kebidanan     26        1.51
+ Akuntansi Sektor Publik     23        1.33
+              Perhotelan     18        1.04
+        Sistem Informasi     15        0.87
+
+education_level
+---------------
+          value  count  percentage
+   Diploma Tiga   1044       60.56
+      Diploma 3    289       16.76
+Sarjana Terapan    239       13.86
+        Sarjana    152        8.82
+
+accreditation_status
+--------------------
+        value  count  percentage
+  Baik Sekali    988       57.31
+         Baik    562       32.60
+Terakreditasi    174       10.09
+
+graduation_predicate
+--------------------
+           value  count  percentage
+   Dengan Pujian    906       52.55
+Sangat Memuaskan    580       33.64
+             nan    232       13.46
+       Memuaskan      6        0.35
+
+faculty_program_name
+--------------------
+                                             value  count  percentage
+                 Sekolah Vokasi/D3 Teknik Komputer    312       18.10
+                       Sekolah Vokasi/D3 Akuntansi    274       15.89
+                         Sekolah Vokasi/D3 Farmasi    254       14.73
+                                               nan    232       13.46
+              Sekolah Vokasi/D4 Teknik Informatika    164        9.51
+        Sekolah Vokasi/D3 Desain Komunikasi Visual    100        5.80
+                    Sekolah Vokasi/D3 Teknik Mesin     94        5.45
+                     Sekolah Vokasi/D3 Keperawatan     92        5.34
+Fakultas Sains dan Teknologi/S1 Teknik Informatika     72        4.18
+              Sekolah Vokasi/D3 Teknik Elektronika     42        2.44
+                       Sekolah Vokasi/D3 Kebidanan     28        1.62
+         Sekolah Vokasi/D4 Akuntansi Sektor Publik     26        1.51
+                      Sekolah Vokasi/D3 Perhotelan     20        1.16
+  Fakultas Sains dan Teknologi/S1 Sistem Informasi     14        0.81
+
+======================================================================
+7. NUMERICAL VARIABLE SUMMARY
+======================================================================
+
+      count      mean       std       min    25%       50%       75%  max
+gpa  1492.0  3.532674  0.263736  2.646018  3.375  3.576469  3.725664  4.0
+
+======================================================================
+8. NUMERICAL VARIABLES BY LABEL
+======================================================================
+
+        gpa                                   
+      count      mean       std       min  max
+label                                         
+0       746  3.532674  0.263825  2.646018  4.0
+1       746  3.532674  0.263825  2.646018  4.0
+
+======================================================================
+9. CATEGORICAL VARIABLES VS LABEL (SCREENING FOR POSSIBLE TARGET LEAKAGE)
+======================================================================
+
+
+--- institution vs label ---
+label           0     1
+institution            
+PMKM         50.0  50.0
+UHN          50.0  50.0
+
+--- program vs label ---
+label                         0      1
+program                               
+Akuntansi                 42.19  57.81
+Akuntansi Sektor Publik   43.48  56.52
+Analis Kesehatan          74.45  25.55
+Desain Komunikasi Visual  43.82  56.18
+Farmasi                   39.72  60.28
+Kebidanan                 46.15  53.85
+Keperawatan               41.77  58.23
+Manajemen Informatika     91.30   8.70
+Perhotelan                44.44  55.56
+Sistem Informasi          53.33  46.67
+Teknik Elektronika        44.74  55.26
+Teknik Informatika        41.87  58.13
+Teknik Komputer           40.91  59.09
+Teknik Mesin              41.25  58.75
+
+--- education_level vs label ---
+label                0      1
+education_level              
+Diploma 3        59.86  40.14
+Diploma Tiga     41.76  58.24
+Sarjana          71.71  28.29
+Sarjana Terapan  60.25  39.75
+
+--- accreditation_status vs label ---
+label                     0      1
+accreditation_status              
+Baik                  50.53  49.47
+Baik Sekali           43.02  56.98
+Terakreditasi         87.93  12.07
+
+--- graduation_predicate vs label ---
+label                    0     1
+graduation_predicate            
+Dengan Pujian         50.0  50.0
+Memuaskan             50.0  50.0
+Sangat Memuaskan      50.0  50.0
+
+--- faculty_program_name vs label ---
+label                                                  0     1
+faculty_program_name                                          
+Fakultas Sains dan Teknologi/S1 Sistem Informasi    50.0  50.0
+Fakultas Sains dan Teknologi/S1 Teknik Informatika  50.0  50.0
+Sekolah Vokasi/D3 Akuntansi                         50.0  50.0
+Sekolah Vokasi/D3 Desain Komunikasi Visual          50.0  50.0
+Sekolah Vokasi/D3 Farmasi                           50.0  50.0
+Sekolah Vokasi/D3 Kebidanan                         50.0  50.0
+Sekolah Vokasi/D3 Keperawatan                       50.0  50.0
+Sekolah Vokasi/D3 Perhotelan                        50.0  50.0
+Sekolah Vokasi/D3 Teknik Elektronika                50.0  50.0
+Sekolah Vokasi/D3 Teknik Komputer                   50.0  50.0
+Sekolah Vokasi/D3 Teknik Mesin                      50.0  50.0
+Sekolah Vokasi/D4 Akuntansi Sektor Publik           50.0  50.0
+Sekolah Vokasi/D4 Teknik Informatika                50.0  50.0
+
+======================================================================
+10. NUMERICAL VARIABLES VS LABEL (SCREENING)
+======================================================================
+
+
+--- gpa vs label ---
+       count      mean       std       min    median  max
+label                                                    
+0        746  3.532674  0.263825  2.646018  3.576469  4.0
+1        746  3.532674  0.263825  2.646018  3.576469  4.0
+
+======================================================================
+11. IDENTIFIER-LIKE COLUMN SCREENING
+======================================================================
+
+       column  unique_count  unique_ratio
+credential_id          1724           1.0
+
+======================================================================
+12. CONSTANT AND NEAR-CONSTANT VARIABLES
+======================================================================
+
+No constant or >=99% dominant variable detected.
+
+======================================================================
+13. BASIC VALUE CONSISTENCY CHECKS
+======================================================================
+
+GPA outside 0-4 range: 0 rows
+
+======================================================================
+14. SAMPLE RECORDS
+======================================================================
+
+   credential_id institution                program education_level accreditation_status       gpa graduation_predicate  graduation_date               faculty_program_name  label          manipulation_type
+0       UHN-0301         UHN           Teknik Mesin    Diploma Tiga          Baik Sekali  3.588235        Dengan Pujian  31 Januari 2026     Sekolah Vokasi/D3 Teknik Mesin      1                       none
+1   UHN-INV-0214         UHN              Akuntansi    Diploma Tiga                 Baik  3.752212        Dengan Pujian  5 Februari 2026        Sekolah Vokasi/D3 Akuntansi      0         accreditation_swap
+2       UHN-0536         UHN        Teknik Komputer    Diploma Tiga          Baik Sekali  3.593220        Dengan Pujian  31 Januari 2026  Sekolah Vokasi/D3 Teknik Komputer      1                       none
+3   UHN-INV-0457         UHN                Farmasi    Diploma Tiga                 Baik  3.812500        Dengan Pujian  31 Januari 2026          Sekolah Vokasi/D3 Farmasi      0         accreditation_swap
+4       UHN-0562         UHN        Teknik Komputer    Diploma Tiga          Baik Sekali  3.762712        Dengan Pujian  31 Januari 2026  Sekolah Vokasi/D3 Teknik Komputer      1                       none
+5  PMKM-INV-0059        PMKM  Manajemen Informatika       Diploma 3        Terakreditasi       NaN                  NaN              NaN                                NaN      0         accreditation_swap
+6       UHN-0406         UHN                Farmasi    Diploma Tiga          Baik Sekali  3.205357     Sangat Memuaskan  31 Januari 2026          Sekolah Vokasi/D3 Farmasi      1                       none
+7  PMKM-INV-0016        PMKM              Kebidanan       Diploma 3                 Baik       NaN                  NaN              NaN                                NaN      0  cross_institution_program
+8       UHN-0024         UHN            Keperawatan    Diploma Tiga                 Baik  3.812500        Dengan Pujian  31 Januari 2026      Sekolah Vokasi/D3 Keperawatan      1                       none
+9      PMKM-0811        PMKM       Analis Kesehatan       Diploma 3                 Baik       NaN                  NaN              NaN                                NaN      1                       none
+
+======================================================================
+15. PRELIMINARY AUDIT INTERPRETATION
+======================================================================
+
+This section is a screening result, not a final leakage diagnosis.
+- Total records: 1724
+- Total variables: 11
+- Exact duplicate rows excluding first occurrence: 0
+- Duplicate rows based on predictors excluding label: 0
+- Target column 'label' exists.
+- No constant/near-constant variable was detected under the screening threshold.
+
+IMPORTANT: A strong relationship between a feature and the label does not by itself prove target leakage. Leakage must be evaluated from the data-generation process and the modeling pipeline.
+
+Next step: use this report to design a separate leakage test before running the final Q1 model comparison.

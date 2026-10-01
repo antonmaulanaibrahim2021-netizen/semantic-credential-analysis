@@ -1,0 +1,5 @@
+manipulation_type,count,institution_unique,program_unique,education_level_unique,accreditation_status_unique,graduation_predicate_unique,faculty_program_name_unique,gpa_count,gpa_missing,gpa_mean,gpa_std,gpa_min,gpa_max
+accreditation_swap,288,2,14,4,3,4,14,249,39,3.5182582894700056,0.2622273610882991,2.64601769911504,3.98230088495575
+cross_institution_program,287,2,13,4,3,3,14,248,39,3.546818864837628,0.26680071898302987,2.75221238938053,3.96610169491525
+education_level_swap,287,2,14,4,3,4,14,249,38,3.5330026383623907,0.2627230803512962,2.66891891891892,4.0
+none,862,2,14,4,3,4,14,746,116,3.5326743291018747,0.26382467662287823,2.64601769911504,4.0

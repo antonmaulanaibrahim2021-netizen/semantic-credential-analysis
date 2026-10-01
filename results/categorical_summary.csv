@@ -1,0 +1,7 @@
+column,unique_count,missing_count,top_value,top_count
+institution,2,0,UHN,1492
+program,14,0,Farmasi,287
+education_level,4,0,Diploma Tiga,1044
+accreditation_status,3,0,Baik Sekali,988
+graduation_predicate,4,232,Dengan Pujian,906
+faculty_program_name,14,232,Sekolah Vokasi/D3 Teknik Komputer,312

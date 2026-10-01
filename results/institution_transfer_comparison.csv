@@ -1,0 +1,9 @@
+Experiment,Train Institution,Test Institution,Model,Accuracy,Precision,Recall,F1-score,ROC-AUC
+Institution Transfer,UHN,PMKM,Logistic Regression,0.4870689655172414,0.0,0.0,0.0,0.27601070154577884
+Institution Transfer,UHN,PMKM,Decision Tree,0.5,0.0,0.0,0.0,0.5
+Institution Transfer,UHN,PMKM,SVM,0.5,0.0,0.0,0.0,0.22815101070154578
+Institution Transfer,UHN,PMKM,Random Forest,0.5,0.0,0.0,0.0,0.1724137931034483
+Institution Transfer,PMKM,UHN,Logistic Regression,0.5,0.0,0.0,0.0,0.34293443494886044
+Institution Transfer,PMKM,UHN,Decision Tree,0.5,0.0,0.0,0.0,0.5
+Institution Transfer,PMKM,UHN,SVM,0.5,0.0,0.0,0.0,0.3228559466394497
+Institution Transfer,PMKM,UHN,Random Forest,0.5,0.0,0.0,0.0,0.4803617506055531

@@ -1,0 +1,21 @@
+Rank,Feature,Importance
+1,program_Analis Kesehatan,0.0951501880823482
+2,program_Manajemen Informatika,0.09008576158560747
+3,education_level_Diploma Tiga,0.08485361297713051
+4,accreditation_status_Baik Sekali,0.08124966356143509
+5,accreditation_status_Baik,0.06618898762534847
+6,accreditation_status_Terakreditasi,0.05733764764387917
+7,education_level_Diploma 3,0.05578231709788536
+8,program_Teknik Informatika,0.04857017705987536
+9,education_level_Sarjana Terapan,0.0343295159081854
+10,education_level_Sarjana,0.031593755040927866
+11,faculty_program_name_Sekolah Vokasi/D4 Teknik Informatika,0.027142497687508947
+12,program_Farmasi,0.026529962427356987
+13,program_Akuntansi,0.024789969629558126
+14,program_Desain Komunikasi Visual,0.02339646543480239
+15,program_Teknik Komputer,0.023242990911179023
+16,program_Keperawatan,0.021209841675919563
+17,program_Teknik Elektronika,0.021033232429077335
+18,gpa,0.020777423733777035
+19,faculty_program_name_Sekolah Vokasi/D3 Teknik Komputer,0.014946977463301944
+20,faculty_program_name_Sekolah Vokasi/D3 Desain Komunikasi Visual,0.013476512475343408

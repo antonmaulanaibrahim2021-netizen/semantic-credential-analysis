@@ -1,0 +1,112 @@
+======================================================================
+SEMANTIC CONSISTENCY REFERENCE AUDIT REPORT
+======================================================================
+
+Dataset: cross_institutional_dataset (1).xlsx
+Total records: 1724
+Reference records: 862
+Manipulated records: 862
+
+REFERENCE RELATIONSHIPS
+----------------------------------------------------------------------
+institution_program: 15 observed combinations
+Columns: institution + program
+program_education: 16 observed combinations
+Columns: program + education_level
+program_accreditation: 16 observed combinations
+Columns: program + accreditation_status
+institution_program_education: 16 observed combinations
+Columns: institution + program + education_level
+institution_program_accreditation: 16 observed combinations
+Columns: institution + program + accreditation_status
+
+GROUP-LEVEL RESULTS
+----------------------------------------------------------------------
+        manipulation_type  records  label_0  label_1  institution_program_novel_count  institution_program_novel_percentage  institution_program_observed_percentage  program_education_novel_count  program_education_novel_percentage  program_education_observed_percentage  program_accreditation_novel_count  program_accreditation_novel_percentage  program_accreditation_observed_percentage  institution_program_education_novel_count  institution_program_education_novel_percentage  institution_program_education_observed_percentage  institution_program_accreditation_novel_count  institution_program_accreditation_novel_percentage  institution_program_accreditation_observed_percentage  at_least_one_novel_count  at_least_one_novel_percentage  all_relationships_observed_count  all_relationships_observed_percentage
+       accreditation_swap      288      288        0                                0                                   0.0                                    100.0                              0                              0.0000                               100.0000                                245                                 85.0694                                    14.9306                                          0                                             0.0                                              100.0                                            272                                             94.4444                                                 5.5556                       272                        94.4444                                16                                 5.5556
+cross_institution_program      287      287        0                              287                                 100.0                                      0.0                            287                            100.0000                                 0.0000                                215                                 74.9129                                    25.0871                                        287                                           100.0                                                0.0                                            287                                            100.0000                                                 0.0000                       287                       100.0000                                 0                                 0.0000
+     education_level_swap      287      287        0                                0                                   0.0                                    100.0                            265                             92.3345                                 7.6655                                  0                                  0.0000                                   100.0000                                        287                                           100.0                                                0.0                                              0                                              0.0000                                               100.0000                       287                       100.0000                                 0                                 0.0000
+
+RELATIONSHIP-SPECIFIC RESULTS
+----------------------------------------------------------------------
+                     relationship         manipulation_type  records  novel_count  novel_percentage
+              institution_program        accreditation_swap      288            0            0.0000
+              institution_program cross_institution_program      287          287          100.0000
+              institution_program      education_level_swap      287            0            0.0000
+                program_education        accreditation_swap      288            0            0.0000
+                program_education cross_institution_program      287          287          100.0000
+                program_education      education_level_swap      287          265           92.3345
+            program_accreditation        accreditation_swap      288          245           85.0694
+            program_accreditation cross_institution_program      287          215           74.9129
+            program_accreditation      education_level_swap      287            0            0.0000
+    institution_program_education        accreditation_swap      288            0            0.0000
+    institution_program_education cross_institution_program      287          287          100.0000
+    institution_program_education      education_level_swap      287          287          100.0000
+institution_program_accreditation        accreditation_swap      288          272           94.4444
+institution_program_accreditation cross_institution_program      287          287          100.0000
+institution_program_accreditation      education_level_swap      287            0            0.0000
+
+NOVELTY VS LABEL
+----------------------------------------------------------------------
+label                              0
+at_least_one_novel_relationship     
+0                                 16
+1                                846
+
+INTERPRETATION
+----------------------------------------------------------------------
+The reference set consists exclusively of records with manipulation_type = none.
+Observed attribute combinations in this reference set are treated as empirically observed normal credential patterns.
+A manipulated record is classified as novel for a relationship when its attribute combination does not occur in the normal reference set.
+
+Important limitation:
+Absence from the reference set does not prove that a credential combination is academically invalid.
+Novelty should therefore be interpreted as an empirical inconsistency signal rather than a formal academic validity judgment.
+
+GROUP-LEVEL FINDINGS
+
+accreditation_swap:
+- Records: 288
+- At least one novel relationship: 94.4444%
+- All selected relationships observed: 5.5556%
+
+cross_institution_program:
+- Records: 287
+- At least one novel relationship: 100.0000%
+- All selected relationships observed: 0.0000%
+
+education_level_swap:
+- Records: 287
+- At least one novel relationship: 100.0000%
+- All selected relationships observed: 0.0000%
+
+LABEL-NOVELTY FINDINGS
+Label 0 records: 862
+Label 0 records with novelty: 846
+Label 0 novelty rate: 98.1439%
+Label 1 records: 0
+Label 1 records with novelty: 0
+Label 1 novelty rate: 0.0000%
+
+METHODOLOGICAL CONCLUSION
+If label 0 records consistently show novel semantic relationships while label 1 records remain within the reference patterns, the dataset provides empirical support for interpreting the classification task as reference-based semantic consistency assessment.
+If substantial numbers of label 0 records remain fully observed in the normal reference set, then the label cannot be explained completely by the tested semantic relationships.
+Similarly, if label 1 records frequently contain novel relationships, the reference-based definition of normality requires additional investigation.
+
+MODEL DEVELOPMENT RESTRICTION
+manipulation_type must remain excluded from the primary machine-learning feature matrix.
+credential_id must also remain excluded because it functions as an identifier rather than a semantic credential attribute.
+
+OUTPUT FILES
+----------------------------------------------------------------------
+Reference rules:
+C:\Users\LENOVO\Semantic_Credential_Q1\results\semantic_reference_rules.csv
+
+Group results:
+C:\Users\LENOVO\Semantic_Credential_Q1\results\semantic_consistency_group_results.csv
+
+Record results:
+C:\Users\LENOVO\Semantic_Credential_Q1\results\semantic_consistency_record_results.csv
+
+Report:
+C:\Users\LENOVO\Semantic_Credential_Q1\results\semantic_consistency_reference_report.txt

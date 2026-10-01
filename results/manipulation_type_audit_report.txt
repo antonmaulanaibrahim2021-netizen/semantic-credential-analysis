@@ -1,0 +1,122 @@
+======================================================================
+MANIPULATION TYPE AUDIT REPORT
+======================================================================
+
+Dataset: cross_institutional_dataset (1).xlsx
+Rows: 1724
+Columns: 11
+
+TARGET DISTRIBUTION
+----------------------------------------------------------------------
+label
+0    862
+1    862
+
+MANIPULATION TYPE DISTRIBUTION
+----------------------------------------------------------------------
+                           count  percentage
+manipulation_type                           
+none                         862     50.0000
+accreditation_swap           288     16.7053
+cross_institution_program    287     16.6473
+education_level_swap         287     16.6473
+
+MANIPULATION TYPE VS LABEL - COUNTS
+----------------------------------------------------------------------
+label                        0    1
+manipulation_type                  
+accreditation_swap         288    0
+cross_institution_program  287    0
+education_level_swap       287    0
+none                         0  862
+
+MANIPULATION TYPE VS LABEL - ROW PERCENTAGES
+----------------------------------------------------------------------
+label                          0      1
+manipulation_type                      
+accreditation_swap         100.0    0.0
+cross_institution_program  100.0    0.0
+education_level_swap       100.0    0.0
+none                         0.0  100.0
+
+DETERMINISTIC MANIPULATION CATEGORIES
+----------------------------------------------------------------------
+        manipulation_type  label  count  percentage
+       accreditation_swap      0    288     16.7053
+cross_institution_program      0    287     16.6473
+     education_level_swap      0    287     16.6473
+                     none      1    862     50.0000
+
+MAJORITY-RULE ANALYSIS
+----------------------------------------------------------------------
+Majority-rule accuracy: 100.0000%
+
+                           majority_label  category_count  correct_by_majority  accuracy_within_category
+manipulation_type                                                                                       
+accreditation_swap                      0             288                  288                     100.0
+cross_institution_program               0             287                  287                     100.0
+education_level_swap                    0             287                  287                     100.0
+none                                    1             862                  862                     100.0
+
+PROXY / DETERMINISTIC STATUS
+----------------------------------------------------------------------
+Total categories: 4
+Deterministic categories: 4
+Deterministic category percentage: 100.0000%
+
+MANIPULATION TYPE VS SEMANTIC ATTRIBUTES
+----------------------------------------------------------------------
+        manipulation_type            attribute  unique_attribute_values  total_records
+       accreditation_swap          institution                        2            288
+cross_institution_program          institution                        2            287
+     education_level_swap          institution                        2            287
+                     none          institution                        2            862
+       accreditation_swap              program                       14            288
+cross_institution_program              program                       13            287
+     education_level_swap              program                       14            287
+                     none              program                       14            862
+       accreditation_swap      education_level                        4            288
+cross_institution_program      education_level                        4            287
+     education_level_swap      education_level                        4            287
+                     none      education_level                        4            862
+       accreditation_swap accreditation_status                        3            288
+cross_institution_program accreditation_status                        3            287
+     education_level_swap accreditation_status                        3            287
+                     none accreditation_status                        3            862
+       accreditation_swap                  gpa                      189            288
+cross_institution_program                  gpa                      182            287
+     education_level_swap                  gpa                      191            287
+                     none                  gpa                      391            862
+       accreditation_swap graduation_predicate                        4            288
+cross_institution_program graduation_predicate                        3            287
+     education_level_swap graduation_predicate                        4            287
+                     none graduation_predicate                        4            862
+       accreditation_swap      graduation_date                        3            288
+cross_institution_program      graduation_date                        3            287
+     education_level_swap      graduation_date                        3            287
+                     none      graduation_date                        3            862
+       accreditation_swap faculty_program_name                       14            288
+cross_institution_program faculty_program_name                       14            287
+     education_level_swap faculty_program_name                       14            287
+                     none faculty_program_name                       14            862
+
+INTERPRETATION
+----------------------------------------------------------------------
+All observed manipulation_type categories are associated with a single target label.
+Therefore, manipulation_type behaves as a deterministic proxy for the observed label in the current dataset.
+This finding requires investigation of the original label-generation procedure.
+
+A deterministic relationship alone does not establish target leakage.
+Target leakage should be assessed by examining how the target label was originally constructed and whether manipulation_type represents information that would be unavailable at real-world verification time.
+
+IMPORTANT FOR MODELING:
+manipulation_type should NOT be included as a predictor in the primary machine-learning experiment until its role in label construction has been established.
+
+The script does not modify the dataset.
+
+OUTPUT FILES
+----------------------------------------------------------------------
+Distribution : C:\Users\LENOVO\Semantic_Credential_Q1\results\manipulation_type_distribution.csv
+Crosstab     : C:\Users\LENOVO\Semantic_Credential_Q1\results\manipulation_type_label_crosstab.csv
+Relationships : C:\Users\LENOVO\Semantic_Credential_Q1\results\manipulation_type_attribute_relationships.csv
+Report       : C:\Users\LENOVO\Semantic_Credential_Q1\results\manipulation_type_audit_report.txt

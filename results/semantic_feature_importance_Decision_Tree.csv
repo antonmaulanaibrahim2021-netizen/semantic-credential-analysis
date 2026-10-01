@@ -1,0 +1,50 @@
+Feature,Importance,Model
+categorical__institution_PMKM,0.0,Decision Tree
+categorical__institution_UHN,0.0,Decision Tree
+categorical__program_Akuntansi,0.0,Decision Tree
+categorical__program_Akuntansi Sektor Publik,0.0,Decision Tree
+categorical__program_Analis Kesehatan,0.0,Decision Tree
+categorical__program_Desain Komunikasi Visual,0.0,Decision Tree
+categorical__program_Farmasi,0.013940690888989886,Decision Tree
+categorical__program_Kebidanan,0.0,Decision Tree
+categorical__program_Keperawatan,0.0,Decision Tree
+categorical__program_Manajemen Informatika,0.0,Decision Tree
+categorical__program_Perhotelan,0.0,Decision Tree
+categorical__program_Sistem Informasi,0.0,Decision Tree
+categorical__program_Teknik Elektronika,0.0,Decision Tree
+categorical__program_Teknik Informatika,0.002577119668367263,Decision Tree
+categorical__program_Teknik Komputer,0.0,Decision Tree
+categorical__program_Teknik Mesin,0.0,Decision Tree
+categorical__education_level_Diploma 3,0.0,Decision Tree
+categorical__education_level_Diploma Tiga,0.0036179829196764358,Decision Tree
+categorical__education_level_Sarjana,0.0,Decision Tree
+categorical__education_level_Sarjana Terapan,0.02051176878904525,Decision Tree
+categorical__accreditation_status_Baik,0.04433299315893536,Decision Tree
+categorical__accreditation_status_Baik Sekali,0.03447947412223729,Decision Tree
+categorical__accreditation_status_Terakreditasi,0.0,Decision Tree
+categorical__graduation_predicate_Dengan Pujian,0.0,Decision Tree
+categorical__graduation_predicate_Memuaskan,0.0,Decision Tree
+categorical__graduation_predicate_Sangat Memuaskan,0.0,Decision Tree
+categorical__graduation_predicate_nan,0.0,Decision Tree
+categorical__graduation_date_31 Januari 2026,0.0,Decision Tree
+categorical__graduation_date_5 Februari 2026,0.0,Decision Tree
+categorical__graduation_date_nan,0.0,Decision Tree
+categorical__faculty_program_name_Fakultas Sains dan Teknologi/S1 Sistem Informasi,0.0,Decision Tree
+categorical__faculty_program_name_Fakultas Sains dan Teknologi/S1 Teknik Informatika,0.00563068162836536,Decision Tree
+categorical__faculty_program_name_Sekolah Vokasi/D3 Akuntansi,0.0,Decision Tree
+categorical__faculty_program_name_Sekolah Vokasi/D3 Desain Komunikasi Visual,0.0,Decision Tree
+categorical__faculty_program_name_Sekolah Vokasi/D3 Farmasi,0.0,Decision Tree
+categorical__faculty_program_name_Sekolah Vokasi/D3 Kebidanan,0.0,Decision Tree
+categorical__faculty_program_name_Sekolah Vokasi/D3 Keperawatan,0.0,Decision Tree
+categorical__faculty_program_name_Sekolah Vokasi/D3 Perhotelan,0.0,Decision Tree
+categorical__faculty_program_name_Sekolah Vokasi/D3 Teknik Elektronika,0.0,Decision Tree
+categorical__faculty_program_name_Sekolah Vokasi/D3 Teknik Komputer,0.0,Decision Tree
+categorical__faculty_program_name_Sekolah Vokasi/D3 Teknik Mesin,0.0,Decision Tree
+categorical__faculty_program_name_Sekolah Vokasi/D4 Akuntansi Sektor Publik,0.0,Decision Tree
+categorical__faculty_program_name_Sekolah Vokasi/D4 Teknik Informatika,0.0,Decision Tree
+categorical__faculty_program_name_nan,0.0,Decision Tree
+numeric__gpa,0.0,Decision Tree
+numeric__semantic_consistency_score,0.8749092888243831,Decision Tree
+numeric__institution_program_valid,0.0,Decision Tree
+numeric__program_education_valid,0.0,Decision Tree
+numeric__program_accreditation_valid,0.0,Decision Tree

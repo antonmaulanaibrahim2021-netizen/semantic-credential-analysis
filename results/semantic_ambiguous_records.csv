@@ -1,0 +1,17 @@
+original_index,manipulation_type,label,institution,program,education_level,accreditation_status,institution_program_observed,institution_program_novel,program_education_observed,program_education_novel,program_accreditation_observed,program_accreditation_novel,institution_program_education_observed,institution_program_education_novel,institution_program_accreditation_observed,institution_program_accreditation_novel,novel_relationship_count,all_relationships_observed,at_least_one_novel_relationship
+25,accreditation_swap,0,UHN,Teknik Informatika,Sarjana Terapan,Baik,1,0,1,0,1,0,1,0,1,0,0,1,0
+246,accreditation_swap,0,UHN,Teknik Informatika,Sarjana,Baik Sekali,1,0,1,0,1,0,1,0,1,0,0,1,0
+247,accreditation_swap,0,UHN,Teknik Informatika,Sarjana Terapan,Baik,1,0,1,0,1,0,1,0,1,0,0,1,0
+385,accreditation_swap,0,UHN,Teknik Informatika,Sarjana Terapan,Baik,1,0,1,0,1,0,1,0,1,0,0,1,0
+466,accreditation_swap,0,UHN,Teknik Informatika,Sarjana Terapan,Baik,1,0,1,0,1,0,1,0,1,0,0,1,0
+644,accreditation_swap,0,UHN,Teknik Informatika,Sarjana,Baik Sekali,1,0,1,0,1,0,1,0,1,0,0,1,0
+699,accreditation_swap,0,UHN,Teknik Informatika,Sarjana Terapan,Baik,1,0,1,0,1,0,1,0,1,0,0,1,0
+945,accreditation_swap,0,UHN,Teknik Informatika,Sarjana Terapan,Baik,1,0,1,0,1,0,1,0,1,0,0,1,0
+1043,accreditation_swap,0,UHN,Teknik Informatika,Sarjana Terapan,Baik,1,0,1,0,1,0,1,0,1,0,0,1,0
+1251,accreditation_swap,0,UHN,Teknik Informatika,Sarjana Terapan,Baik,1,0,1,0,1,0,1,0,1,0,0,1,0
+1439,accreditation_swap,0,UHN,Teknik Informatika,Sarjana Terapan,Baik,1,0,1,0,1,0,1,0,1,0,0,1,0
+1454,accreditation_swap,0,UHN,Teknik Informatika,Sarjana,Baik Sekali,1,0,1,0,1,0,1,0,1,0,0,1,0
+1576,accreditation_swap,0,UHN,Teknik Informatika,Sarjana Terapan,Baik,1,0,1,0,1,0,1,0,1,0,0,1,0
+1632,accreditation_swap,0,UHN,Teknik Informatika,Sarjana Terapan,Baik,1,0,1,0,1,0,1,0,1,0,0,1,0
+1643,accreditation_swap,0,UHN,Teknik Informatika,Sarjana Terapan,Baik,1,0,1,0,1,0,1,0,1,0,0,1,0
+1671,accreditation_swap,0,UHN,Teknik Informatika,Sarjana Terapan,Baik,1,0,1,0,1,0,1,0,1,0,0,1,0

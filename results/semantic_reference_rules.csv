@@ -1,0 +1,80 @@
+relationship,n_attributes,combination,institution,program,education_level,accreditation_status
+institution_program,2,UHN | Teknik Mesin,UHN,Teknik Mesin,,
+institution_program,2,UHN | Teknik Komputer,UHN,Teknik Komputer,,
+institution_program,2,UHN | Farmasi,UHN,Farmasi,,
+institution_program,2,UHN | Keperawatan,UHN,Keperawatan,,
+institution_program,2,PMKM | Analis Kesehatan,PMKM,Analis Kesehatan,,
+institution_program,2,UHN | Teknik Elektronika,UHN,Teknik Elektronika,,
+institution_program,2,UHN | Akuntansi,UHN,Akuntansi,,
+institution_program,2,PMKM | Farmasi,PMKM,Farmasi,,
+institution_program,2,UHN | Teknik Informatika,UHN,Teknik Informatika,,
+institution_program,2,UHN | Desain Komunikasi Visual,UHN,Desain Komunikasi Visual,,
+institution_program,2,PMKM | Manajemen Informatika,PMKM,Manajemen Informatika,,
+institution_program,2,UHN | Sistem Informasi,UHN,Sistem Informasi,,
+institution_program,2,UHN | Perhotelan,UHN,Perhotelan,,
+institution_program,2,UHN | Kebidanan,UHN,Kebidanan,,
+institution_program,2,UHN | Akuntansi Sektor Publik,UHN,Akuntansi Sektor Publik,,
+program_education,2,Teknik Mesin | Diploma Tiga,,Teknik Mesin,Diploma Tiga,
+program_education,2,Teknik Komputer | Diploma Tiga,,Teknik Komputer,Diploma Tiga,
+program_education,2,Farmasi | Diploma Tiga,,Farmasi,Diploma Tiga,
+program_education,2,Keperawatan | Diploma Tiga,,Keperawatan,Diploma Tiga,
+program_education,2,Analis Kesehatan | Diploma 3,,Analis Kesehatan,Diploma 3,
+program_education,2,Teknik Elektronika | Diploma Tiga,,Teknik Elektronika,Diploma Tiga,
+program_education,2,Akuntansi | Diploma Tiga,,Akuntansi,Diploma Tiga,
+program_education,2,Farmasi | Diploma 3,,Farmasi,Diploma 3,
+program_education,2,Teknik Informatika | Sarjana Terapan,,Teknik Informatika,Sarjana Terapan,
+program_education,2,Desain Komunikasi Visual | Diploma Tiga,,Desain Komunikasi Visual,Diploma Tiga,
+program_education,2,Manajemen Informatika | Diploma 3,,Manajemen Informatika,Diploma 3,
+program_education,2,Sistem Informasi | Sarjana,,Sistem Informasi,Sarjana,
+program_education,2,Teknik Informatika | Sarjana,,Teknik Informatika,Sarjana,
+program_education,2,Perhotelan | Diploma Tiga,,Perhotelan,Diploma Tiga,
+program_education,2,Kebidanan | Diploma Tiga,,Kebidanan,Diploma Tiga,
+program_education,2,Akuntansi Sektor Publik | Sarjana Terapan,,Akuntansi Sektor Publik,Sarjana Terapan,
+program_accreditation,2,Teknik Mesin | Baik Sekali,,Teknik Mesin,,Baik Sekali
+program_accreditation,2,Teknik Komputer | Baik Sekali,,Teknik Komputer,,Baik Sekali
+program_accreditation,2,Farmasi | Baik Sekali,,Farmasi,,Baik Sekali
+program_accreditation,2,Keperawatan | Baik,,Keperawatan,,Baik
+program_accreditation,2,Analis Kesehatan | Baik,,Analis Kesehatan,,Baik
+program_accreditation,2,Teknik Elektronika | Terakreditasi,,Teknik Elektronika,,Terakreditasi
+program_accreditation,2,Akuntansi | Baik Sekali,,Akuntansi,,Baik Sekali
+program_accreditation,2,Farmasi | Baik,,Farmasi,,Baik
+program_accreditation,2,Teknik Informatika | Baik Sekali,,Teknik Informatika,,Baik Sekali
+program_accreditation,2,Desain Komunikasi Visual | Baik,,Desain Komunikasi Visual,,Baik
+program_accreditation,2,Manajemen Informatika | Baik,,Manajemen Informatika,,Baik
+program_accreditation,2,Sistem Informasi | Baik,,Sistem Informasi,,Baik
+program_accreditation,2,Teknik Informatika | Baik,,Teknik Informatika,,Baik
+program_accreditation,2,Perhotelan | Baik,,Perhotelan,,Baik
+program_accreditation,2,Kebidanan | Baik Sekali,,Kebidanan,,Baik Sekali
+program_accreditation,2,Akuntansi Sektor Publik | Baik,,Akuntansi Sektor Publik,,Baik
+institution_program_education,3,UHN | Teknik Mesin | Diploma Tiga,UHN,Teknik Mesin,Diploma Tiga,
+institution_program_education,3,UHN | Teknik Komputer | Diploma Tiga,UHN,Teknik Komputer,Diploma Tiga,
+institution_program_education,3,UHN | Farmasi | Diploma Tiga,UHN,Farmasi,Diploma Tiga,
+institution_program_education,3,UHN | Keperawatan | Diploma Tiga,UHN,Keperawatan,Diploma Tiga,
+institution_program_education,3,PMKM | Analis Kesehatan | Diploma 3,PMKM,Analis Kesehatan,Diploma 3,
+institution_program_education,3,UHN | Teknik Elektronika | Diploma Tiga,UHN,Teknik Elektronika,Diploma Tiga,
+institution_program_education,3,UHN | Akuntansi | Diploma Tiga,UHN,Akuntansi,Diploma Tiga,
+institution_program_education,3,PMKM | Farmasi | Diploma 3,PMKM,Farmasi,Diploma 3,
+institution_program_education,3,UHN | Teknik Informatika | Sarjana Terapan,UHN,Teknik Informatika,Sarjana Terapan,
+institution_program_education,3,UHN | Desain Komunikasi Visual | Diploma Tiga,UHN,Desain Komunikasi Visual,Diploma Tiga,
+institution_program_education,3,PMKM | Manajemen Informatika | Diploma 3,PMKM,Manajemen Informatika,Diploma 3,
+institution_program_education,3,UHN | Sistem Informasi | Sarjana,UHN,Sistem Informasi,Sarjana,
+institution_program_education,3,UHN | Teknik Informatika | Sarjana,UHN,Teknik Informatika,Sarjana,
+institution_program_education,3,UHN | Perhotelan | Diploma Tiga,UHN,Perhotelan,Diploma Tiga,
+institution_program_education,3,UHN | Kebidanan | Diploma Tiga,UHN,Kebidanan,Diploma Tiga,
+institution_program_education,3,UHN | Akuntansi Sektor Publik | Sarjana Terapan,UHN,Akuntansi Sektor Publik,Sarjana Terapan,
+institution_program_accreditation,3,UHN | Teknik Mesin | Baik Sekali,UHN,Teknik Mesin,,Baik Sekali
+institution_program_accreditation,3,UHN | Teknik Komputer | Baik Sekali,UHN,Teknik Komputer,,Baik Sekali
+institution_program_accreditation,3,UHN | Farmasi | Baik Sekali,UHN,Farmasi,,Baik Sekali
+institution_program_accreditation,3,UHN | Keperawatan | Baik,UHN,Keperawatan,,Baik
+institution_program_accreditation,3,PMKM | Analis Kesehatan | Baik,PMKM,Analis Kesehatan,,Baik
+institution_program_accreditation,3,UHN | Teknik Elektronika | Terakreditasi,UHN,Teknik Elektronika,,Terakreditasi
+institution_program_accreditation,3,UHN | Akuntansi | Baik Sekali,UHN,Akuntansi,,Baik Sekali
+institution_program_accreditation,3,PMKM | Farmasi | Baik,PMKM,Farmasi,,Baik
+institution_program_accreditation,3,UHN | Teknik Informatika | Baik Sekali,UHN,Teknik Informatika,,Baik Sekali
+institution_program_accreditation,3,UHN | Desain Komunikasi Visual | Baik,UHN,Desain Komunikasi Visual,,Baik
+institution_program_accreditation,3,PMKM | Manajemen Informatika | Baik,PMKM,Manajemen Informatika,,Baik
+institution_program_accreditation,3,UHN | Sistem Informasi | Baik,UHN,Sistem Informasi,,Baik
+institution_program_accreditation,3,UHN | Teknik Informatika | Baik,UHN,Teknik Informatika,,Baik
+institution_program_accreditation,3,UHN | Perhotelan | Baik,UHN,Perhotelan,,Baik
+institution_program_accreditation,3,UHN | Kebidanan | Baik Sekali,UHN,Kebidanan,,Baik Sekali
+institution_program_accreditation,3,UHN | Akuntansi Sektor Publik | Baik,UHN,Akuntansi Sektor Publik,,Baik

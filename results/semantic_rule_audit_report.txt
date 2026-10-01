@@ -1,0 +1,248 @@
+======================================================================
+SEMANTIC RULE AUDIT REPORT
+======================================================================
+
+Dataset: cross_institutional_dataset (1).xlsx
+Rows: 1724
+Columns: 11
+
+Dataset columns:
+- credential_id
+- institution
+- program
+- education_level
+- accreditation_status
+- gpa
+- graduation_predicate
+- graduation_date
+- faculty_program_name
+- label
+- manipulation_type
+
+MANIPULATION GROUP SUMMARY
+----------------------------------------------------------------------
+        manipulation_type  count  percentage  label_0  label_1
+       accreditation_swap    288     16.7053      288        0
+cross_institution_program    287     16.6473      287        0
+     education_level_swap    287     16.6473      287        0
+                     none    862     50.0000        0      862
+
+MISSING VALUE SUMMARY
+----------------------------------------------------------------------
+        manipulation_type            attribute  missing_count  missing_percentage
+       accreditation_swap          institution              0              0.0000
+       accreditation_swap              program              0              0.0000
+       accreditation_swap      education_level              0              0.0000
+       accreditation_swap accreditation_status              0              0.0000
+       accreditation_swap                  gpa             39             13.5417
+       accreditation_swap graduation_predicate              0              0.0000
+       accreditation_swap      graduation_date             39             13.5417
+       accreditation_swap faculty_program_name              0              0.0000
+cross_institution_program          institution              0              0.0000
+cross_institution_program              program              0              0.0000
+cross_institution_program      education_level              0              0.0000
+cross_institution_program accreditation_status              0              0.0000
+cross_institution_program                  gpa             39             13.5889
+cross_institution_program graduation_predicate              0              0.0000
+cross_institution_program      graduation_date             39             13.5889
+cross_institution_program faculty_program_name              0              0.0000
+     education_level_swap          institution              0              0.0000
+     education_level_swap              program              0              0.0000
+     education_level_swap      education_level              0              0.0000
+     education_level_swap accreditation_status              0              0.0000
+     education_level_swap                  gpa             38             13.2404
+     education_level_swap graduation_predicate              0              0.0000
+     education_level_swap      graduation_date             38             13.2404
+     education_level_swap faculty_program_name              0              0.0000
+                     none          institution              0              0.0000
+                     none              program              0              0.0000
+                     none      education_level              0              0.0000
+                     none accreditation_status              0              0.0000
+                     none                  gpa            116             13.4571
+                     none graduation_predicate              0              0.0000
+                     none      graduation_date            116             13.4571
+                     none faculty_program_name              0              0.0000
+
+PROGRAM-INSTITUTION RELATIONSHIP
+----------------------------------------------------------------------
+institution               PMKM  UHN
+program                            
+Akuntansi                    8  229
+Akuntansi Sektor Publik      1   22
+Analis Kesehatan            97  130
+Desain Komunikasi Visual     6   83
+Farmasi                     76  211
+Kebidanan                    3   23
+Keperawatan                  2   77
+Manajemen Informatika       20  118
+Perhotelan                   1   17
+Sistem Informasi             3   12
+Teknik Elektronika           3   35
+Teknik Informatika           6  197
+Teknik Komputer              4  260
+Teknik Mesin                 2   78
+
+PROGRAM-EDUCATION RELATIONSHIP
+----------------------------------------------------------------------
+education_level           Diploma 3  Diploma Tiga  Sarjana  Sarjana Terapan
+program                                                                    
+Akuntansi                        22           183       15               17
+Akuntansi Sektor Publik           2             1        2               18
+Analis Kesehatan                 78           111       20               18
+Desain Komunikasi Visual         16            67        3                3
+Farmasi                          80           172       17               18
+Kebidanan                         5            18        2                1
+Keperawatan                       5            62        9                3
+Manajemen Informatika            16            98        4               20
+Perhotelan                        3            13        1                1
+Sistem Informasi                  5             1        9                0
+Teknik Elektronika                3            28        4                3
+Teknik Informatika               27            19       48              109
+Teknik Komputer                  19           208       12               25
+Teknik Mesin                      8            63        6                3
+
+PROGRAM-ACCREDITATION RELATIONSHIP
+----------------------------------------------------------------------
+accreditation_status      Baik  Baik Sekali  Terakreditasi
+program                                                   
+Akuntansi                   37          183             17
+Akuntansi Sektor Publik     18            2              3
+Analis Kesehatan           106          105             16
+Desain Komunikasi Visual    72            8              9
+Farmasi                     80          177             30
+Kebidanan                    6           19              1
+Keperawatan                 63           10              6
+Manajemen Informatika       40           96              2
+Perhotelan                  15            1              2
+Sistem Informasi            13            1              1
+Teknik Elektronika           7            3             28
+Teknik Informatika          67          113             23
+Teknik Komputer             30          208             26
+Teknik Mesin                 8           62             10
+
+EDUCATION-ACCREDITATION RELATIONSHIP
+----------------------------------------------------------------------
+accreditation_status  Baik  Baik Sekali  Terakreditasi
+education_level                                       
+Diploma 3              179           92             18
+Diploma Tiga           245          677            122
+Sarjana                 88           50             14
+Sarjana Terapan         50          169             20
+
+ATTRIBUTE PROFILE BY MANIPULATION TYPE
+----------------------------------------------------------------------
+        manipulation_type  count  institution_unique  program_unique  education_level_unique  accreditation_status_unique  graduation_predicate_unique  faculty_program_name_unique  gpa_count  gpa_missing  gpa_mean  gpa_std  gpa_min  gpa_max
+       accreditation_swap    288                   2              14                       4                            3                            4                           14        249           39  3.518258 0.262227 2.646018 3.982301
+cross_institution_program    287                   2              13                       4                            3                            3                           14        248           39  3.546819 0.266801 2.752212 3.966102
+     education_level_swap    287                   2              14                       4                            3                            4                           14        249           38  3.533003 0.262723 2.668919 4.000000
+                     none    862                   2              14                       4                            3                            4                           14        746          116  3.532674 0.263825 2.646018 4.000000
+
+MANIPULATED VS NON-MANIPULATED
+----------------------------------------------------------------------
+           attribute                                              value  normal_percentage  manipulated_percentage
+         institution                                               PMKM            13.4571                 13.4571
+         institution                                                UHN            86.5429                 86.5429
+             program                                          Akuntansi            15.8933                 11.6009
+             program                            Akuntansi Sektor Publik             1.5081                  1.1601
+             program                                   Analis Kesehatan             6.7285                 19.6056
+             program                           Desain Komunikasi Visual             5.8005                  4.5244
+             program                                            Farmasi            20.0696                 13.2251
+             program                                          Kebidanan             1.6241                  1.3921
+             program                                        Keperawatan             5.3364                  3.8283
+             program                              Manajemen Informatika             1.3921                 14.6172
+             program                                         Perhotelan             1.1601                  0.9281
+             program                                   Sistem Informasi             0.8121                  0.9281
+             program                                 Teknik Elektronika             2.4362                  1.9722
+             program                                 Teknik Informatika            13.6891                  9.8608
+             program                                    Teknik Komputer            18.0974                 12.5290
+             program                                       Teknik Mesin             5.4524                  3.8283
+     education_level                                          Diploma 3            13.4571                 20.0696
+     education_level                                       Diploma Tiga            70.5336                 50.5800
+     education_level                                            Sarjana             4.9884                 12.6450
+     education_level                                    Sarjana Terapan            11.0209                 16.7053
+accreditation_status                                               Baik            32.2506                 32.9466
+accreditation_status                                        Baik Sekali            65.3132                 49.3039
+accreditation_status                                      Terakreditasi             2.4362                 17.7494
+graduation_predicate                                      Dengan Pujian            52.5522                 52.5522
+graduation_predicate                                          Memuaskan             0.3480                  0.3480
+graduation_predicate                                   Sangat Memuaskan            33.6427                 33.6427
+graduation_predicate                                        __MISSING__            13.4571                 13.4571
+faculty_program_name   Fakultas Sains dan Teknologi/S1 Sistem Informasi             0.8121                  0.8121
+faculty_program_name Fakultas Sains dan Teknologi/S1 Teknik Informatika             4.1763                  4.1763
+faculty_program_name                        Sekolah Vokasi/D3 Akuntansi            15.8933                 15.8933
+faculty_program_name         Sekolah Vokasi/D3 Desain Komunikasi Visual             5.8005                  5.8005
+faculty_program_name                          Sekolah Vokasi/D3 Farmasi            14.7332                 14.7332
+faculty_program_name                        Sekolah Vokasi/D3 Kebidanan             1.6241                  1.6241
+faculty_program_name                      Sekolah Vokasi/D3 Keperawatan             5.3364                  5.3364
+faculty_program_name                       Sekolah Vokasi/D3 Perhotelan             1.1601                  1.1601
+faculty_program_name               Sekolah Vokasi/D3 Teknik Elektronika             2.4362                  2.4362
+faculty_program_name                  Sekolah Vokasi/D3 Teknik Komputer            18.0974                 18.0974
+faculty_program_name                     Sekolah Vokasi/D3 Teknik Mesin             5.4524                  5.4524
+faculty_program_name          Sekolah Vokasi/D4 Akuntansi Sektor Publik             1.5081                  1.5081
+faculty_program_name               Sekolah Vokasi/D4 Teknik Informatika             9.5128                  9.5128
+faculty_program_name                                        __MISSING__            13.4571                 13.4571
+
+MANIPULATION PATTERN COUNTS
+----------------------------------------------------------------------
+accreditation_swap_count: 288
+education_level_swap_count: 287
+cross_institution_program_count: 287
+
+INTERPRETATION
+----------------------------------------------------------------------
+The semantic rule audit evaluates whether the observed manipulation categories correspond to observable changes or inconsistencies in academic credential attributes.
+
+1. Accreditation swap
+- Records analyzed: 288
+- The accreditation distribution was examined against the non-manipulated group.
+
+2. Education-level swap
+- Records analyzed: 287
+- Education-level distributions were examined against the non-manipulated group.
+
+3. Cross-institution program
+- Records analyzed: 287
+- Programs associated with more than one institution: 14
+
+4. Program-education relationship
+- Programs associated with multiple education levels: 14
+
+5. Program-accreditation relationship
+- Programs associated with multiple accreditation statuses: 14
+
+6. Important methodological interpretation
+The presence of manipulated records does not by itself establish that the observed machine-learning task represents real-world semantic validation.
+The audit is intended to establish whether the synthetic manipulation procedures correspond to observable semantic inconsistencies.
+If the manipulation procedures directly define the target label, the resulting classification task should be described as synthetic manipulation-based semantic consistency classification rather than unrestricted real-world credential verification.
+The variable manipulation_type must remain excluded from the primary ML feature set because it is a deterministic proxy for the target label.
+
+MODELING RESTRICTIONS
+----------------------------------------------------------------------
+1. credential_id must not be used as a predictor.
+2. manipulation_type must not be used as a predictor.
+3. label must remain the target variable.
+4. Preprocessing must be performed after the train-test split to avoid data leakage.
+5. Any semantic rule inferred from this audit must be documented before final model evaluation.
+
+OUTPUT FILES
+----------------------------------------------------------------------
+Group summary:
+C:\Users\LENOVO\Semantic_Credential_Q1\results\semantic_rule_group_summary.csv
+
+Program-institution:
+C:\Users\LENOVO\Semantic_Credential_Q1\results\program_institution_consistency.csv
+
+Program-education:
+C:\Users\LENOVO\Semantic_Credential_Q1\results\program_education_relationship.csv
+
+Program-accreditation:
+C:\Users\LENOVO\Semantic_Credential_Q1\results\program_accreditation_relationship.csv
+
+Education-accreditation:
+C:\Users\LENOVO\Semantic_Credential_Q1\results\education_accreditation_relationship.csv
+
+Attribute summary:
+C:\Users\LENOVO\Semantic_Credential_Q1\results\semantic_attribute_summary.csv
+
+Full report:
+C:\Users\LENOVO\Semantic_Credential_Q1\results\semantic_rule_audit_report.txt
