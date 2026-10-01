@@ -234,6 +234,7 @@ pip install -r requirements.txt
 
 Execute the main pipeline:
 
+
 ```bash
 python main.py
 ```
@@ -289,7 +290,17 @@ This repository is provided as a research artifact supporting transparency and r
 
 
 ---
+## Environment
 
+Python >= 3.10
+
+Main dependencies:
+- NumPy
+- Pandas
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- Joblib
 ## License
 
 This project is released under the MIT License.
